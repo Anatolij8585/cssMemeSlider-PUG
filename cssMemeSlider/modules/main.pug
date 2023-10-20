@@ -1,13 +1,27 @@
 main
-    .main
-        .image
-            img(src="assets/images/mem_1.jpg", alt="Image").image-item
-        .image-content
-            .image-content__text
-                p.text-item How much garbage! We'll fix it now...
-            .image-content__control
-                .control-item.active
-                .control-item
-                .control-item
-                .control-item
-                .control-item
+    .container
+        .memes__container
+            .memes
+                .meme#meme__1
+                    img(src="assets/images/mem_1.jpg", alt="Image").image-item
+                .meme#meme__2
+                    img(src="assets/images/mem_2.jpg", alt="Image").image-item
+                .meme#meme__3
+                    img(src="assets/images/mem_3.jpg", alt="Image").image-item
+                .meme#meme__4
+                    img(src="assets/images/mem_4.jpg", alt="Image").image-item
+                .meme#meme__5
+                    img(src="assets/images/mem_5.jpeg", alt="Image").image-item
+        .meme__nav
+            .memes__text
+                p.meme__text(href="#meme__1") How much garbage! We'll fix it now...
+                p.meme__text(href="#meme__2") Stupid users...
+                p.meme__text(href="#meme__3") Oh, these programming languages...
+                p.meme__text(href="#meme__4") One day in the life of a programmer...
+                p.meme__text(href="#meme__5") The work of a programmer...
+            .meme__links
+                a.meme__navlink(href="#meme__1")
+                a.meme__navlink(href="#meme__2")
+                a.meme__navlink(href="#meme__3")
+                a.meme__navlink(href="#meme__4")
+                a.meme__navlink(href="#meme__5")
